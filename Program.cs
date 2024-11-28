@@ -45,7 +45,7 @@ namespace Atividade
                 Console.WriteLine("Total a pagar .: " + pf.total.ToString("C"));
             }
 
-            if(var_tipo == "j");
+            else if(var_tipo == "j")
             {
                 // --- Pessoa Jurídica ---
                 Pessoa_Juridica pj = new Pessoa_Juridica();

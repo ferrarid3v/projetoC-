@@ -14,7 +14,7 @@ namespace Atividade
         {
             this.valor = v;
             this.valor_imposto = this.valor * 20 / 100;
-            this.valor = this.valor + this.valor_imposto;
+            this.total = this.valor + this.valor_imposto;
         }
     }
 }
