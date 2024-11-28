@@ -6,7 +6,7 @@ namespace Atividade
     {
         static void Main(string[] args)
         {
-            Pessoa_Fisica pf = new Pessoa_Fisica();
+
             float val_pag;
 
             Console.WriteLine("Informe o nome: ");
@@ -45,6 +45,33 @@ namespace Atividade
                 Console.WriteLine("Total a pagar .: " + pf.total.ToString("C"));
             }
 
+            if(var_tipo == "j");
+            {
+                // --- Pessoa Jurídica ---
+                Pessoa_Juridica pj = new Pessoa_Juridica();
+                pj.nome = var_nome;
+                pj.endereco = var_endereco;
+
+                Console.WriteLine("Informe o CNPJ: ");
+                pj.cnpj = Console.ReadLine();
+
+                Console.WriteLine("Informe a Inscrição Estadual: ");
+                pj.ie = Console.ReadLine();
+
+                Console.WriteLine("Informe o valor da compra: ");
+                val_pag = float.Parse(Console.ReadLine());
+                pj.Pagar_Imposto(val_pag);
+
+                Console.WriteLine("-------- Pessoa Jurídica --------");
+                Console.WriteLine("Nome ..........: " + pj.nome);
+                Console.WriteLine("Endereço ......: " + pj.endereco);
+                Console.WriteLine("CNPJ ..........: " + pj.cnpj);
+                Console.WriteLine("IE ............: " + pj.ie);
+                Console.WriteLine("Valor da Compra: " + pj.valor.ToString("C"));
+                Console.WriteLine("Imposto .......: " + pj.valor_imposto.ToString("C"));
+                Console.WriteLine("Total a Pagar .: " + pj.total.ToString("C"));
+
+            }
 
         }
     }
